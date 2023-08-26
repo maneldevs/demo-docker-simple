@@ -1,6 +1,8 @@
 {
-	"name": "Java",
-	"image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
+	"name": "Java & MySQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "none",
@@ -8,7 +10,7 @@
 			"installGradle": "false"
 		}
 	},
-	"runArgs": ["--name", "docker_simple_devcontainer"],
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
