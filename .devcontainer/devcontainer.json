@@ -1,0 +1,31 @@
+{
+	"name": "Java",
+	"image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "false",
+			"installGradle": "false"
+		}
+	},
+	"runArgs": ["--name", "docker_simple_devcontainer"],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "java -version",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"vmware.vscode-boot-dev-pack",
+				"vscjava.vscode-lombok"
+			]
+		}
+	},
+
+	"remoteUser": "root"
+}
